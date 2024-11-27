@@ -38,6 +38,13 @@ div.scrollmenu .project-card {
     height: 240px;
 }
 
+.link-tag
+{
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* Model image                                     */
 .modal {
     display: none;
