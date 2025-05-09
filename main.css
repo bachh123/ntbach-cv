@@ -60,7 +60,7 @@ div.scrollmenu .project-card {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.modal-content {
+.modal-content-por {
     margin: auto;
     display: block;
     height: 80%;
@@ -68,9 +68,21 @@ div.scrollmenu .project-card {
     z-index: 1;
 }
 
-#caption {
+.modal-content-lan {
     margin: auto;
     display: block;
+    width: 80%;
+    max-height: 700px;
+    z-index: 1;
+}
+
+.img-lanscape
+{
+    margin-top: 50px;
+}
+
+#caption {
+    margin: auto;
     width: 80%;
     max-width: 700px;
     text-align: center;

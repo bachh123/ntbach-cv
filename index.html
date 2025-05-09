@@ -21,7 +21,8 @@
         <span class="close">&times;</span>
     
         <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
+        <img class="modal-content-por" id="img01">
+        <img class="modal-content-lan" id="img02">
     
         <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
@@ -159,10 +160,83 @@
                 </div>
 
                 <!-- Projects -->
-                <div class="w3-container w3-card w3-white">
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
                     <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+                            class="fa fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects (Company)</h2>
                     <hr>
+
+
+                    <!-- NoteMaster               -->
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Note Master</b></h5>
+                        <p>Music application</p>
+                        <div class="w3-container">
+                            <button
+                                    onclick="window.open('https://play.google.com/store/apps/details?id=com.sensornotes.notesmaster&pcampaignid=web_share','_blank')"
+                                    class="w3-button w3-left w3-round-large w3-border w3-green w3-padding-12 w3-section link-tag">
+                                ANDROID <i class="fa fa-android w3-margin-left w3-xlarge w3-text-white"></i>
+                            </button>
+                            <button
+                                    onclick="window.open('https://apps.apple.com/vn/app/notes-master/id1661057182?l=vi','_blank')"
+                                    class="w3-button w3-left w3-round-large w3-border w3-black w3-padding-12 w3-section link-tag">
+                                IOS <i class="fa fa-apple w3-margin-left w3-xlarge w3-text-white"></i>
+                            </button>
+                        </div>
+                        <br>
+                        <!-- -------------------- -->
+                        <div class="w3-container scrollmenu">
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay')" width="108" height="240" src="./images/note-master/story.jpg"
+                                     alt="Avatar">
+                            </div>
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img onclick="showImageModelPortrait(this.src, 'Shop')" width="108" height="240" src="./images/note-master/piano-game.jpg"
+                                     alt="Avatar">
+                            </div>
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img onclick="showImageModelPortrait(this.src, 'Shop')" width="108" height="240" src="./images/note-master/beat-game.jpg"
+                                     alt="Avatar">
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <!-- Panist               -->
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Pianist Master</b></h5>
+                        <p>Music application</p>
+                        <div class="w3-container">
+                            <button
+                                    onclick="window.open('https://play.google.com/store/apps/details?id=com.sensornotes.pianistmaster&pcampaignid=web_share','_blank')"
+                                    class="w3-button w3-left w3-round-large w3-border w3-green w3-padding-12 w3-section link-tag">
+                                ANDROID <i class="fa fa-android w3-margin-left w3-xlarge w3-text-white"></i>
+                            </button>
+                            <button
+                                    onclick="window.open('https://apps.apple.com/vn/app/pianist-master/id6446922116?l=vi','_blank')"
+                                    class="w3-button w3-left w3-round-large w3-border w3-black w3-padding-12 w3-section link-tag">
+                                IOS <i class="fa fa-apple w3-margin-left w3-xlarge w3-text-white"></i>
+                            </button>
+                        </div>
+                        <br>
+                        <!-- -------------------- -->
+                        <div class="w3-container scrollmenu">
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img onclick="showImageModelLandscape(this.src, 'Gameplay')" width="240" height="240" src="./images/pianist/learn.jpg"
+                                     alt="Avatar">
+                            </div>
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img onclick="showImageModelLandscape(this.src, 'Shop')" width="240" height="240" src="./images/pianist/rhythm-counter.jpg"
+                                     alt="Avatar">
+                            </div>
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img onclick="showImageModelLandscape(this.src, 'Shop')" width="240" height="240" src="./images/pianist/chord-library.jpg"
+                                     alt="Avatar">
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
 
                     <!-- EDMCats               -->
                     <div class="w3-container">
@@ -205,10 +279,10 @@
                                 </video>
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay')" width="108" height="240" src="./images/edm/gameplay.jpg" alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay')" width="108" height="240" src="./images/edm/gameplay.jpg" alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Shop')" width="108" height="240" src="./images/edm/shop.jpg" alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Shop')" width="108" height="240" src="./images/edm/shop.jpg" alt="Avatar">
                             </div>
                         </div>
                         <hr>
@@ -234,19 +308,19 @@
                                 </video>
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/gameplay.jpg" alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/gameplay.jpg" alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/gameplay-2.jpg" alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/gameplay-2.jpg" alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/gameplay-3.jpg" alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/gameplay-3.jpg" alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/shop.jpg" alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/shop.jpg" alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/song-list.jpg" alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay')" width="108" height="240" src="./images/pixel/song-list.jpg" alt="Avatar">
                             </div>
                         </div>
                         <hr>
@@ -282,20 +356,20 @@
                                 </video>
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay single cat')" width="108" height="240" src="./images/cathop/single.jpg"
-                                    alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay single cat')" width="108" height="240" src="./images/cathop/single.jpg"
+                                     alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay duet cats')" width="108" height="240" src="./images/cathop/duet.jpg"
-                                    alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay duet cats')" width="108" height="240" src="./images/cathop/duet.jpg"
+                                     alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Shop')" width="108" height="240" src="./images/cathop/shop-1.jpg"
-                                    alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Shop')" width="108" height="240" src="./images/cathop/shop-1.jpg"
+                                     alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Shop')" width="108" height="240" src="./images/cathop/shop-2.jpg"
-                                    alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Shop')" width="108" height="240" src="./images/cathop/shop-2.jpg"
+                                     alt="Avatar">
                             </div>
                         </div>
                         <hr>
@@ -326,21 +400,55 @@
                                 </video>
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Gameplay')" width="108" height="240" src="./images/beatcat/gameplay.jpg"
-                                    alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Gameplay')" width="108" height="240" src="./images/beatcat/gameplay.jpg"
+                                     alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Shop')" width="108" height="240" src="./images/beatcat/shop-1.jpg"
-                                    alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Shop')" width="108" height="240" src="./images/beatcat/shop-1.jpg"
+                                     alt="Avatar">
                             </div>
                             <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
-                                <img onclick="showImageModel(this.src, 'Shop')" width="108" height="240" src="./images/beatcat/shop-2.jpg"
-                                    alt="Avatar">
+                                <img onclick="showImageModelPortrait(this.src, 'Shop')" width="108" height="240" src="./images/beatcat/shop-2.jpg"
+                                     alt="Avatar">
                             </div>
                         </div>
                         <hr>
                     </div>
 
+                </div>
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects (Personal)</h2>
+                    <hr>
+
+                    <!-- Pixel Gun TD               -->
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Pixel Gun TD</b></h5>
+                        <p>A small defence game on WebGL</p>
+                        <div class="w3-container">
+                            <button
+                                    onclick="window.open('https://bachh123.itch.io/pixel-gun-td','_blank')"
+                                    class="w3-button w3-left w3-round-large w3-border w3-red w3-padding-12 w3-section link-tag">
+                                WebGL <i class="fa fa-gamepad w3-margin-left w3-xlarge w3-text-white"></i>
+                            </button>
+                        </div>
+                        <br>
+                        <!-- -------------------- -->
+                        <div class="w3-container scrollmenu">
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img class="img-lanscape" onclick="showImageModelLandscape(this.src, 'Gameplay')" width="234" height="108" src="./images/pixel-gun-td/gameplay.jpg" alt="Avatar">
+                            </div>
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img class="img-lanscape" onclick="showImageModelLandscape(this.src, 'Gameplay')" width="234" height="108" src="./images/pixel-gun-td/gameplay-2.jpg" alt="Avatar">
+                            </div>
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img class="img-lanscape" onclick="showImageModelLandscape(this.src, 'Gameplay')" width="234" height="108" src="./images/pixel-gun-td/shop.jpg" alt="Avatar">
+                            </div>
+                            <div class="w3-btn w3-round-large w3-border w3-border-black w3-card-4 project-card">
+                                <img class="img-lanscape" onclick="showImageModelLandscape(this.src, 'Shop')" width="234" height="108" src="./images/pixel-gun-td/lose.jpg" alt="Avatar">
+                            </div>
+                        </div>
+                    </div>
 
                     <hr>
                 </div>
